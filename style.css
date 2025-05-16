@@ -155,11 +155,46 @@ p {
 }
 
 @media (max-width: 1000px) {
+
+  .conteudo-vantagens {
+  grid-template-columns: 1fr;
+  }
+
+  .subtitulo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  body {
+    gap: 30px;
+    margin-top: 20px;
+  }
   .conteudo {
     grid-template-columns: 1fr;
   }
-
-  .conteudo-vantagens {
-    
+  .introducao::before {
+    display: none;
   }
+
+.introducao {
+  text-align: left;
+  justify-items: start;
+}
+
+.header {
+  gap: 30px;
+}
+
+.subtitulo {
+  font-size: 3rem;
+}
+
+}
+
+@media (max-width: 400px) {
+.subtitulo {
+  font-size: 2rem;
+}
 }
